@@ -7,6 +7,7 @@ body {
 /* Custom styles for the container */
 .container {
     padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #1E1E1E; /* Dark background for container */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -17,6 +18,12 @@ h2 {
     color: #BB86FC; /* Light purple, for contrast */
     text-align: center;
     margin-bottom: 15px;
+}
+
+/* Centering form rows */
+.form-row {
+    justify-content: center; /* Center the form rows */
+    width: 100%; /* Full width to allow centering */
 }
 
 /* Custom styles for form inputs */
@@ -59,4 +66,77 @@ input[type="number"]::-webkit-outer-spin-button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Add additional custom styles as needed */
+/* Adjust input widths */
+.form-row .col-4 {
+    max-width: 28%;
+}
+
+.form-row .col-3 {
+    max-width: 18%;
+}
+
+.form-row .col-2 {
+    max-width: 16%;
+}
+
+/* Style for the input group (date picker) */
+.input-group-addon {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+    border: none; /* Remove any border */
+    border-radius: 0.25rem; /* Consistent border-radius */
+}
+
+.input-group .form-control {
+    border-radius: 0.25rem; /* Consistent border-radius */
+}
+
+/* Dark theme for the datepicker */
+.datepicker-dropdown {
+    background-color: #343a40 !important; /* Bootstrap's dark background */
+    color: #ffffff !important; /* Light text */
+}
+
+/* Style for the datepicker's table cells */
+.datepicker table tr td,
+.datepicker table tr th {
+    color: #ffffff !important; /* Light text */
+}
+
+/* Style for the datepicker's header */
+.datepicker th {
+    background-color: #343a40 !important; /* Bootstrap's dark background */
+}
+
+.datepicker-dropdown,
+.datepicker-dropdown table {
+    border-radius: 0.25rem !important; /* Set the border-radius */
+}
+
+/* Custom styles for the calendar input field */
+.input-group .form-control {
+    background-color: #333; /* Dark background for inputs */
+    color: #fff; /* Light text for inputs */
+    border-radius: 0.25rem 0 0 0.25rem; /* Rounded corners on the left side */
+}
+
+/* Style the input group addon to match */
+.input-group-addon {
+    background-color: #333; /* Dark background for addon */
+    color: #fff; /* Light text for addon */
+    border: none; /* Remove borders */
+    border-radius: 0 0.25rem 0.25rem 0; /* Rounded corners on the right side */
+    display: flex; /* Ensure the icon centers vertically */
+    align-items: center; /* Center alignment of the icon */
+    justify-content: center; /* Center alignment of the icon */
+}
+
+/* If you want to adjust the size of the icon container */
+.input-group-addon {
+    padding: 0.375rem 0.75rem; /* Same padding as input for consistent height */
+}
+
+/* SVG icon style */
+.bi-calendar3 {
+    fill: #fff; /* Color of the SVG icon */
+}
